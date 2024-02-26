@@ -305,6 +305,18 @@ impl Clone for FieldData {
 }
 
 impl FieldData {
+    pub fn status(&self) -> u8 {
+        self.status
+    }
+
+    pub fn gas_index(&self) -> u8 {
+        self.gas_index
+    }
+
+    pub fn meas_index(&self) -> u8 {
+        self.meas_index
+    }
+    
     /// Temperature in degree celsius (°C)
     pub fn temperature_celsius(&self) -> f32 {
         self.temperature as f32 / 100f32
