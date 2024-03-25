@@ -248,10 +248,10 @@ impl FieldData {
         self.gas_index
     }
 
-    pub fn meas_index(&self) -> u8 {
-        self.meas_index
+    pub fn measurement_index(&self) -> u8 {
+        self.measurement_index
     }
-    
+
     /// Temperature in degree celsius (°C)
     pub fn temperature_celsius(&self) -> f32 {
         self.temperature as f32 / 100f32
